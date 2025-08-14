@@ -1,0 +1,320 @@
+.d_sub_title>h3{
+    color: #FF50AD;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.program-container{
+    background: linear-gradient(to bottom, 
+    #191919 600px, 
+    rgba(128, 128, 128, 0.5) 1000px, 
+    rgba(128, 128, 128, 0.3) 1100px, 
+    #ffffff 1300px);
+}
+
+.sec1{
+    width: 100%;
+    height: auto;
+    padding: 7vw 100px 3vw;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
+.sec1-btn{
+    padding-bottom: 5vw;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.sec1-btn a{
+    display: block;
+    line-height: 3vw;
+    color: #FF50AD;
+}
+
+.program-btn{
+    width: 15vw;
+    height: 3vw;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+    background-color: #191919;
+    border: 2px solid #FF50AD;
+}
+
+.program-btn.active{
+    display: block;
+    color: #ffffff;
+    background-color: #FF50AD;
+}
+
+.small-tit{
+    font-size: 3.5vw;
+    text-align: center;
+    margin-bottom: 2.5vw;
+    font-weight: bold;
+    color: #ABFF48;
+}
+.big-tit{
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 2.5vw;
+    font-weight: bold;
+    color: #ffffff;
+}
+.sec1-txt{
+    font-size: 1.3vw;
+    text-align: center;
+    margin-bottom: 2.5vw;
+    color: #ffffff;
+}
+
+.sec1-txt span{
+    display: block;
+    margin: 2vw 0;
+}
+
+.sec2{
+    width: 100%;
+    height: auto;
+    padding: 0 100px 7vw;
+    box-sizing: border-box;
+}
+
+.sec2-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+.sec2-content{
+    width: 493px;
+}
+.sec2-content img{
+    width: 493px;
+    height: 392px;
+    display: block;
+    object-fit: cover;
+}
+.sec2-box{
+    width: 100%;
+    height: 50px;
+    background-color: #FF50AD;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    box-sizing: border-box;
+}
+.sec2-box>p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.sec2-box>span{
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.sec2-box>span>img{
+    width: 18px;
+    height: 18px;
+    padding: 6px;
+}
+
+.modalPopup{
+    position: fixed;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* 기존 코드와 호환되게 active 처리 */
+.modalMedia.active,
+div.active { /* 원래 있던 div.active 호환 위해 포함 */
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 내부 컨테이너: 중앙 정렬 */
+.modalInner{
+    width: 80%;
+    max-width: 1100px;
+    max-height: 90vh;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+/* 이미지 래퍼 — 이미지가 너무 크지 않도록 제한 */
+.modalMedia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-img{
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+}
+
+/* 텍스트 영역(제목·설명) */
+.modalMeta{
+    width: 75%;
+    background: rgba(255,255,255,0.04);
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #fff;
+    text-align: left;
+}
+.modal-title{
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.modal-desc{
+    margin: 0;
+    font-size: 15px;
+    color: #e8e8e8;
+    line-height: 1.4;
+}
+
+/* 닫기 버튼 */
+.modalClose{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    z-index: 2;
+}
+.modalClose img{
+    width: 34px;
+    height: 34px;
+}
+
+/* 화살표 위치 (왼/오) */
+.modalArrow{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    pointer-events: none; /* 중앙 컨테이너에 pointer-events 막음 */
+}
+.modalArrow>.prev,
+.modalArrow>.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: auto; /* 아이콘만 클릭 가능 */
+}
+.modalArrow>.prev{ 
+    left: 20px; 
+}
+.modalArrow>.next{ 
+    right: 20px; 
+}
+.modalArrow img{ 
+    width: 36px; 
+    height: 36px; 
+    cursor: pointer; 
+}
+
+
+@media screen and (max-width: 1280px) {
+    .sec1{
+        padding: 5vw 30px 3vw;
+    }
+    .small-tit{
+        font-size: 5vw;
+    }
+    .big-tit{
+        font-size: 6.5vw;
+    }
+    .sec1-txt p{
+        font-size: 2vw;
+    }
+    .sec2{
+        padding: 0px 30px 10vw;
+    }
+    .sec2-content{
+        width: 90%;
+    }
+    .sec2-content>img{
+        width: 100%;
+        height: 45vw;
+    }
+    .sec2-box{
+        height: 5vw;
+        padding: 1vw 3vw;
+    }
+    .sec2-box p{
+        font-size: 2vw;
+    }
+    .sec2-box>span{
+        width: 3vw;
+        height: 3vw;
+    }
+    .sec2-box>span>img{
+        width: 2vw;
+        height: 2vw;
+        padding: 0.5vw;
+    }
+
+    .modalInner{ width: 90%; }
+    .modal-img{ max-height: 55vh; }
+    .modal-title{ font-size: 18px; }
+    .modal-desc{ font-size: 14px; }
+    .modalMeta{ width: 95%; }
+    .modalArrow{
+        top: 50%;
+    }
+    .modalArrow img{ 
+        width: 3vw; 
+        height: 3vw; 
+        cursor: pointer; 
+    }
+    .modalClose img{
+        width: 4vw;
+        height: 4vw;
+    }
+}
+
+@media screen and (max-width: 952px) {
+    .sec1-btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    .program-btn{
+        width: 30vw;
+        height: 4.3vw;
+        font-size: 2vw;
+        border: 1px solid #FF50AD;
+    }
+    .sec1-btn a{
+        line-height: 4.3vw;
+    }
+    .modalArrow{
+        top: 40%;
+    }
+}

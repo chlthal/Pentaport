@@ -1,0 +1,179 @@
+.d_sub_title>h3{
+    color: #FF50AD;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+
+.notice_top{
+    width: 80%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.main_txt{
+    padding-top: 50px;
+    color: #c0c0c0;
+    box-sizing: border-box;
+    font-size: 0.8vw;
+    text-align: right;
+}
+.no_btn{
+    display: flex;
+}
+.notice_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.notice_nav .on1,.on2{
+    width: 15vw; height: 6vw;
+    font-size: 2vw;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 2px solid #191919;
+    border-radius: 2em;
+    line-height: 3;
+    text-align: center;
+    margin-right: -0.6em;
+   
+}
+.notice_nav a{
+    color: #fff;
+}
+.on1{
+    background-color: #fff;
+}
+.on1 a{
+    color: #191919;
+}
+.on2{
+    background-color: #191919;
+}
+
+.faq_nav{
+    padding: 20px 40px;
+    border-top: 2px solid #191919;
+    border-bottom: 1px solid #191919;
+    box-sizing: border-box;
+}
+.faq_nav .nav_nav{
+    gap: 1.7rem;
+    font-size: 1.2rem;
+}
+.nav_nav{
+    display: flex;
+}
+.faq_nav .nav_nav li a{
+    color: #c0c0c0;
+}
+.faq_nav .nav_nav li.on3 a {
+    font-weight: 700;
+    color: #191919;
+}
+
+.notice_main{
+    padding-top: 40px;
+}
+.notice_1{
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+
+
+.body_faq{
+    width: 80%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+.faq_p1{
+    display: flex;
+    border-bottom: 1px solid #191919;
+    padding: 40px    
+}
+.faq_p2{
+    display: flex;
+    padding: 40px;
+    justify-content: flex-start;
+    gap: 40px;  
+}
+.faq_p2 .q{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 0.5;
+    color: #c0c0c0;
+}
+
+.body_faq li .sub {
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+.faq_p1{
+    justify-content: flex-start;
+    gap: 40px;
+}
+.faq_p1 .q{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 0.5;
+    color: #c0c0c0;
+}
+
+
+.faq_p3{ 
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px; 
+    gap: 40px;
+    border-bottom: 1px solid #191919;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.faq_p3 .a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 1;
+    color: #191919;
+    
+}
+.badge_txt{
+    border: 1px solid  #191919;
+    border-radius: 2em;
+    padding: .25em .7em;
+    background-color: #fff;
+    font-weight: 600;
+}
+.sub2{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.page_end .page{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.page{
+    font-weight: 600;
+}
+.page_end .page li a{
+    padding: 15px;
+}
+.page_end{
+    padding-bottom: 5vw;
+}
+.page_end a{
+    font-size: 1vw;
+}
+.page_end .page1 a{
+    color: #191919;
+}
+
+

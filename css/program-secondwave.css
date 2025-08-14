@@ -1,0 +1,321 @@
+.d_sub_title>h3{
+    color: #FF50AD;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.program-container{
+    background: linear-gradient(to bottom, 
+    #191919 600px, 
+    rgba(128, 128, 128, 0.5) 1800px, 
+    rgba(128, 128, 128, 0.3) 2000px, 
+    #ffffff 2300px);
+}
+
+.sec1{
+    width: 100%;
+    height: auto;
+    padding: 7vw 100px 7vw;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
+.sec1-btn{
+    padding-bottom: 5vw;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.sec1-btn a{
+    display: block;
+    line-height: 3vw;
+    color: #FF50AD;
+}
+
+.program-btn{
+    width: 15vw;
+    height: 3vw;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
+    background-color: #191919;
+    border: 2px solid #FF50AD;
+}
+
+.program-btn.active{
+    display: block;
+    color: #ffffff;
+    background-color: #FF50AD;
+}
+
+.small-tit{
+    font-size: 3.5vw;
+    text-align: center;
+    margin-bottom: 2.5vw;
+    font-weight: bold;
+    color: #ABFF48;
+}
+.big-tit{
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 2.5vw;
+    font-weight: bold;
+    color: #ffffff;
+}
+.sec1-txt{
+    font-size: 1.3vw;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sec1-txt span{
+    display: block;
+    margin: 2vw 0;
+}
+
+.musinsa-btn{
+    width: 35vw;
+    height: 5vw;
+    background-color: #ABFF48;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+.musinsa-btn>a{
+    display: block;
+    color: #191919;
+    font-size: 1.8vw;
+    font-weight: 800;
+    text-align: center;
+    line-height: 5vw;
+}
+
+.musinsa-btn:hover{
+    background-color: #FF50AD;
+    transition: all 0.3s ease;
+}
+.musinsa-btn>a:hover{
+    color: #ffffff;
+}
+
+
+.sec2{
+    width: 100%;
+    height: auto;
+    padding: 0 200px 7vw;
+    box-sizing: border-box;
+}
+
+.sec2-wrap{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sec2-wrap>img{
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+.sec2-wrap>:first-child{
+    grid-row: 1/ 3;
+    height: 51vw;
+}
+.sec2-wrap>:nth-child(2){
+    grid-area: 1/2/2/3;
+}
+.sec2-wrap>:nth-child(3){
+    grid-area: 1/3/2/4;
+}
+.sec2-wrap>:nth-child(4){
+    grid-area: 2/2/3/3;
+}
+.sec2-wrap>:nth-child(5){
+    grid-area: 2/3/3/4;
+}
+
+/* .modalPopup{
+    width: 60%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    top: 30px;
+    display: none;
+}
+.modalPopup .modal-img{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.modalClose img{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 0px;
+    top: -40px;
+}
+
+div.active{
+    display: block;
+}
+.modalArrow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalArrow>.prev>img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+}
+.modalArrow>.next>img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+} */
+
+
+.modalPopup{
+    position: fixed;
+    width: 100%; height: 100vh;
+    top:0; right:0; bottom:0; left:0; 
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* 기존 코드와 호환되게 active 처리 */
+.modalPopup.active,
+div.active { /* 원래 있던 div.active 호환 위해 포함 */
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 내부 컨테이너: 중앙 정렬 */
+.modalInner{
+    width: 80%;
+    max-width: 1100px;
+    max-height: 90vh;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+/* 이미지 래퍼 — 이미지가 너무 크지 않도록 제한 */
+.modalMedia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-img{
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+}
+
+/* 닫기 버튼 */
+.modalClose{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    z-index: 2;
+}
+.modalClose img{
+    width: 34px;
+    height: 34px;
+}
+
+/* 화살표 위치 (왼/오) */
+.modalArrow{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    pointer-events: none; /* 중앙 컨테이너에 pointer-events 막음 */
+}
+.modalArrow>.prev,
+.modalArrow>.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: auto; /* 아이콘만 클릭 가능 */
+}
+.modalArrow>.prev{ 
+    left: 20px; 
+}
+.modalArrow>.next{ 
+    right: 20px; 
+}
+.modalArrow img{ 
+    width: 36px; 
+    height: 36px; 
+    cursor: pointer; 
+}
+
+
+@media screen and (max-width: 1280px) {
+    .sec1{
+        padding: 5vw 30px 5vw;
+    }
+    .sec2{
+        padding: 0 30px 10vw;
+    }
+    .modalInner{ width: 90%; }
+    .modal-img{ max-height: 55vh; }
+    .modalArrow img{ 
+        width: 3vw; 
+        height: 3vw; 
+        cursor: pointer; 
+    }
+    .modalClose img{
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+@media screen and (max-width: 952px) {
+    .sec1-btn{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .program-btn{
+        width: 30vw;
+        height: 4.3vw;
+        font-size: 2vw;
+        border: 1px solid #FF50AD;
+    }
+    .sec1-btn a{
+        line-height: 4.3vw;
+        }
+}

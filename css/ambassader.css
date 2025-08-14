@@ -1,0 +1,128 @@
+.d_sub_title>h3{
+    color: #ABFF48;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.d_balming_sec1{
+    width: 100%;
+    background-color: #191919;
+    background-image: linear-gradient(#191919,#191919,#191919,#191919, #fff);
+    padding: 6vw 0;
+}
+
+.d_balming_intro{
+    color: #fff;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+
+
+
+
+.d_balimng_img_1{
+    width: 33vw; height: 23vw;
+    
+    box-sizing: border-box;
+    background-image: url(./../img/do/balming2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    
+
+}
+
+.d_balimng_txt1{
+    width: 33vw; height: auto;
+    padding: 1vw;
+    border : 2px solid #9150CE;
+    border-radius: 2rem;
+   margin: 0 auto;
+
+}
+.d_balimng_txt1>h2{
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1vw;
+    
+}
+.d_balming_flex{
+    display: flex;
+    justify-content: center;
+    gap: 2.5vw;
+}
+
+
+
+.d_balming_flex img{
+    width: 9vw; height: auto;
+}
+
+.d_balming_intro h3{
+    padding-top: 2vw;
+    color: #FF50AD;
+    font-size: 2vw;
+    font-weight: 800;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 2vw;
+    
+}
+
+.d_balming_intro h4{
+    font-size: 1.8vw;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+.d_balming_intro p{
+    font-size: 1.3vw;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 1vw;
+}
+
+
+.d_balming_sec2{
+    padding-bottom: 10vw;
+}
+
+.d_balming_youtube{
+    width: 67%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.d_youtobe_box{
+    width: 45%; height: 18vw;
+   
+}
+
+.d_youtobe_box>iframe{
+    width: 100%; height:  18vw;
+}
+
+.d_youtubu_btn{
+    width: 20vw; height: 3vw;
+    border : 2px solid #9150CE;
+    text-align: center ;
+    border-radius: 2rem;
+    padding: 0.3vw;
+    box-sizing: border-box;
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin: 2vw 0;
+
+}
+
+.d_youtubu_btn a{
+    color: #191919;
+   
+
+}
