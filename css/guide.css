@@ -23,6 +23,7 @@
 }
 .sec1-wrap{
     width: 100%;
+    margin-bottom: 8vw;
 }
 .pink{
     margin-bottom: 100px;
@@ -110,6 +111,11 @@
     transition: color 0.3s ease;
   }
 
+  .pink h2.scrolled {
+    color: #191919;
+    transition: color 0.3s ease;
+  }
+
 .pink .q-wrap{
     width: 100%;
     height: 70px;
@@ -143,9 +149,6 @@
         height: 2.5vw;
     }
 
-    .sec1-wrap .blue h2, .sec1-wrap .pink h2{
-    margin-top: 8vw;
-    }
     .answer li{
         margin: 1vw 0;
         font-size: 1.3vw
