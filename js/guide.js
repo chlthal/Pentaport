@@ -28,10 +28,10 @@ $(document).ready(function(){
             $(this).next(".answer").slideDown(1000, function(){
                 let titleOffset = $(".blue h2").offset().top;
                 console.log("offset:", titleOffset);
-                if (titleOffset > 1569) {
-                    $(".blue h2").addClass("scrolled");
+                if (titleOffset > 1069) {
+                    $(".blue h2, .pink h2").addClass("scrolled");
                 } else {
-                    $(".blue h2").removeClass("scrolled");
+                    $(".blue h2, .pink h2").removeClass("scrolled");
                 }
             });
             $(this).find(".down-icon").hide();
