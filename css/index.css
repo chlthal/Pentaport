@@ -628,7 +628,7 @@ header{
     display: block;
 }
 .sec2-tit h3{
-    width: 300px;
+    width: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1999,6 +1999,7 @@ h_body{
   }
   }
 }  
+
 
 
 
