@@ -392,6 +392,9 @@
     .h_sec3{
         grid-template-columns: 1fr;
     }
-
+.h_sec3_md_box_img img{
+    width: 100%; height: auto;
 }
+}
+
 
