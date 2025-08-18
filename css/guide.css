@@ -8,8 +8,8 @@
     background: linear-gradient(to bottom, 
     #191919 200px, 
     rgba(128, 128, 128, 0.5) 500px, 
-    rgba(128, 128, 128, 0.3) 600px, 
-    #ffffff 1000px);
+    rgba(128, 128, 128, 0.3) 900px, 
+    #ffffff 1200px);
     /* background-color: #191919; */
 }
 .sec1{
@@ -157,4 +157,5 @@
         font-size: 1.3vw
     }
 }
+
 
