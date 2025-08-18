@@ -7,8 +7,8 @@
 .program-container{
     background: linear-gradient(to bottom, 
     #191919 200px, 
-    rgba(128, 128, 128, 0.5) 500px, 
-    rgba(128, 128, 128, 0.3) 900px, 
+    rgba(128, 128, 128, 0.5) 900px, 
+    rgba(128, 128, 128, 0.3) 1000px, 
     #ffffff 1200px);
     /* background-color: #191919; */
 }
@@ -157,5 +157,6 @@
         font-size: 1.3vw
     }
 }
+
 
 
