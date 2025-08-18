@@ -305,7 +305,7 @@
 .h_sec3_md_box_img>h1{
     font-size: 32px;
     font-weight: 700;
-    padding: 0 35px;
+    padding: 0 35px 35px 35px;
 }
 .h_sec3_md_box_img>h1>small{
     font-size: 22px;
@@ -394,3 +394,4 @@
     }
 
 }
+
