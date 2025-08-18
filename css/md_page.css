@@ -305,7 +305,7 @@
 .h_sec3_md_box_img>h1{
     font-size: 32px;
     font-weight: 700;
-    padding: 0 35px 35px 35px;
+    padding: 0 35px;
 }
 .h_sec3_md_box_img>h1>small{
     font-size: 22px;
@@ -317,9 +317,10 @@
     margin: 0 auto;
     overflow: hidden;
     overflow-y: scroll;
+    text-align: center;
 }
 .h_sec3_md_box_img img{
-    width: 100%; height: auto;
+    width: 70%; height: auto;
     
 }
 
@@ -391,4 +392,5 @@
     .h_sec3{
         grid-template-columns: 1fr;
     }
+
 }
