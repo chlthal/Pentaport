@@ -1820,7 +1820,7 @@ h_body{
         font-size: 1.4285714286rem;
     }
     .pentaport-is {
-    padding: 50px 0;
+    padding: 10vw 0;
     }
     .pentaport-is-last{
     margin-top: .7142857143rem;
@@ -1923,7 +1923,12 @@ h_body{
 }
 }
   @media (max-width: 480px) {
-   
+       .badge {
+        border-width: 2px;
+        font-size: 4.5vw;
+    }
+
+
     .csgr_txt p {
       font-size: 20vw;
     }
